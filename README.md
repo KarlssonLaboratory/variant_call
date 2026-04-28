@@ -17,8 +17,8 @@ process PROCESS_NAME {
 	. . .
 
 	container "${workflow.containerEngine == 'singularity' ?
-  	'docker://ghcr.io/karlssonlaboratory/variant_call:bfc2c06' :
-  	'ghcr.io/karlssonlaboratory/variant_call:bfc2c06'}"
+  	'docker://ghcr.io/karlssonlaboratory/variant_call:c12365a' :
+  	'ghcr.io/karlssonlaboratory/variant_call:c12365a'}"
 
   . . .
 }
@@ -29,19 +29,19 @@ The container definition uses an [elvis operator](https://www.nextflow.io/docs/l
 ## Pull from GitHub Container Registry
 
 ```bash
-docker pull ghcr.io/KarlssonLaboratory/variant_call:bfc2c06
+docker pull ghcr.io/KarlssonLaboratory/variant_call:c12365a
 ```
 
 ## Run interactively
 
 ```bash
-docker run -it --rm -v $(pwd):/data ghcr.io/KarlssonLaboratory/variant_call:bfc2c06
+docker run -it --rm -v $(pwd):/data ghcr.io/KarlssonLaboratory/variant_call:c12365a
 ```
 
 ## Build locally
 
 ```bash
-git clone https://github.com/KarlssonLaboratory/variant_call:bfc2c06.git
+git clone https://github.com/KarlssonLaboratory/variant_call:c12365a.git
 cd variant_call
 docker build -t variant_call .
 ```
