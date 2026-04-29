@@ -7,7 +7,7 @@ A rocker/r-ver:4.4.0 container with [vcfR](https://github.com/knausb/vcfR) R-pac
 
 ## Included softwares
 
-`vcfR`, `tidyverse`, `data.table`, `clinfun`, and some system dependencies.
+`vcfR`, `tidyverse`, `data.table`, `clinfun`, `R.utils`, and some system dependencies.
 
 ## Include in nextflow process
 

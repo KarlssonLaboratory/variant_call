@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 ENV CRAN_REPO="https://packagemanager.posit.co/cran/__linux__/jammy/latest"
 
 # Install CRAN packages
-RUN R -e "install.packages(c('data.table', 'vcfR', 'tidyverse', 'clinfun'), repos='${CRAN_REPO}')"
+RUN R -e "install.packages(c('data.table', 'vcfR', 'tidyverse', 'clinfun', 'R.utils'), repos='${CRAN_REPO}')"
 
 WORKDIR /data
 
